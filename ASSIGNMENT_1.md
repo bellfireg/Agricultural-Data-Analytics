@@ -6,7 +6,8 @@
 - **Total Fields**: 500
 - **Total Area**: 20,021.80 Acres
 
-## 2. Spatial Characteristics
+## 2. Spatial Characteristics (Curriculum Alignment)
+- **Data Type**: Vector (Polygons) - *As defined in Class 03 Key Takeaways*
 - **Coordinate Reference System (CRS)**: EPSG:4326 (WGS 84)
 - **Geometry Type**: Polygon
 - **Spatial Extent**:
@@ -16,9 +17,10 @@
   - **North**: 42.1245
 
 ## 3. Attribute Table Observations
-The dataset contains the following attributes:
-- `field_id`: Unique identifier for each field.
-- `crop_2023`: Crop type grown in the 2023 season.
+The dataset connects everything through **Field Boundaries** (Key Takeaway).
+Attributes include:
+- `field_id`: Unique identifier (Primary Key for future joins).
+- `crop_2023`: Crop type (Corn, Soybeans, Wheat, Alfalfa, Oats).
 - `acres`: Calculated area of the field.
 - `yield_2023`: Recorded yield (Bushels/Acre).
 - `owner`: Anonymized owner ID.
