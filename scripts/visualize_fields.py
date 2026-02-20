@@ -6,7 +6,7 @@ import json
 
 # Configuration
 input_file = Path("data/boundaries/fields.geojson")
-output_file = Path("data/field_map.html")
+output_file = Path("docs/index.html")
 
 def create_map():
     print(f"🗺️  Loading data from {input_file}...")
