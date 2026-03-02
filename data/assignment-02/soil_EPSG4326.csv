@@ -1,0 +1,31 @@
+field_id,dominant_soil,om_pct,ph_water
+FLD_0000,Silt Loam,4.2,6.5
+FLD_0001,Clay Loam,3.1,6.7
+FLD_0002,Clay Loam,2.1,7.0
+FLD_0003,Clay Loam,2.4,6.0
+FLD_0004,Clay Loam,2.9,6.2
+FLD_0005,Clay Loam,3.5,6.9
+FLD_0006,Clay Loam,3.0,7.4
+FLD_0007,Clay Loam,2.4,6.8
+FLD_0008,Silt Loam,5.1,6.7
+FLD_0009,Loam,5.2,6.7
+FLD_0010,Silt Loam,2.3,7.0
+FLD_0011,Clay Loam,3.3,6.8
+FLD_0012,Sandy Loam,4.1,7.5
+FLD_0013,Loam,2.4,7.3
+FLD_0014,Clay Loam,3.1,6.2
+FLD_0015,Silt Loam,2.9,6.6
+FLD_0016,Loam,3.0,6.1
+FLD_0017,Loam,4.2,6.0
+FLD_0018,Sandy Loam,4.8,7.0
+FLD_0019,Loam,5.4,7.1
+FLD_0020,Loam,3.1,7.1
+FLD_0021,Clay Loam,4.6,7.0
+FLD_0022,Loam,4.3,6.5
+FLD_0023,Silt Loam,4.5,6.3
+FLD_0024,Silt Loam,3.9,6.5
+FLD_0025,Loam,2.9,6.8
+FLD_0026,Loam,3.9,6.9
+FLD_0027,Loam,4.2,6.0
+FLD_0028,Clay Loam,3.4,6.4
+FLD_0029,Sandy Loam,2.5,6.1

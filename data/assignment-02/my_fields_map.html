@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ec98120c997210e1d606a855e5f6531 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ec98120c997210e1d606a855e5f6531" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ec98120c997210e1d606a855e5f6531 = L.map(
+                "map_8ec98120c997210e1d606a855e5f6531",
+                {
+                    center: [42.0036563481235, -92.95878470537303],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ce7accdcb4fdd2bcb1d33dccf432bb36 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ce7accdcb4fdd2bcb1d33dccf432bb36.addTo(map_8ec98120c997210e1d606a855e5f6531);
+        
+    
+            var feature_group_5e4877c2a8ec4c24b7fa426427042050 = L.featureGroup(
+                {
+}
+            );
+        
+    
+        function geo_json_093558b504c0597a59373562584083e4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#333333", "fillColor": "#9e9e9e", "fillOpacity": 0.7, "weight": 1};
+            }
+        }
+
+        function geo_json_093558b504c0597a59373562584083e4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_093558b504c0597a59373562584083e4 = L.geoJson(null, {
+                onEachFeature: geo_json_093558b504c0597a59373562584083e4_onEachFeature,
+            
+                style: geo_json_093558b504c0597a59373562584083e4_styler,
+            ...{
+}
+        });
+
+        function geo_json_093558b504c0597a59373562584083e4_add (data) {
+            geo_json_093558b504c0597a59373562584083e4
+                .addData(data);
+        }
+            geo_json_093558b504c0597a59373562584083e4_add({"bbox": [-93.00010948569171, 41.99953631187346, -92.90145767026445, 42.00936173849316], "features": [{"bbox": [-92.99974371542336, 41.99986003472911, -92.99574371542336, 42.00386003472911], "geometry": {"coordinates": [[[-92.99574371542336, 41.99986003472911], [-92.99574371542336, 42.00386003472911], [-92.99974371542336, 42.00386003472911], [-92.99974371542336, 41.99986003472911], [-92.99574371542336, 41.99986003472911]]], "type": "Polygon"}, "id": "0", "properties": {"acres": "40.79", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Silt Loam", "field_id": "FLD_0000", "om_pct": 4.2, "owner": "Farmer_000", "ph_water": 6.5, "planting_date": "2023-05-17", "soil_type": "Sandy Loam", "yield_2023": "207"}, "type": "Feature"}, {"bbox": [-92.99520387117674, 41.999704493343934, -92.99120387117674, 42.00370449334393], "geometry": {"coordinates": [[[-92.99120387117674, 41.999704493343934], [-92.99120387117674, 42.00370449334393], [-92.99520387117674, 42.00370449334393], [-92.99520387117674, 41.999704493343934], [-92.99120387117674, 41.999704493343934]]], "type": "Polygon"}, "id": "1", "properties": {"acres": "38.25", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0001", "om_pct": 3.1, "owner": "Farmer_001", "ph_water": 6.7, "planting_date": "2023-05-09", "soil_type": "Sandy Loam", "yield_2023": "166"}, "type": "Feature"}, {"bbox": [-92.98967945661164, 42.00039984422776, -92.98567945661163, 42.004399844227756], "geometry": {"coordinates": [[[-92.98567945661163, 42.00039984422776], [-92.98567945661163, 42.004399844227756], [-92.98967945661164, 42.004399844227756], [-92.98967945661164, 42.00039984422776], [-92.98567945661163, 42.00039984422776]]], "type": "Polygon"}, "id": "2", "properties": {"acres": "38.33", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0002", "om_pct": 2.1, "owner": "Farmer_002", "ph_water": 7.0, "planting_date": "2023-05-01", "soil_type": "Sandy Loam", "yield_2023": "185"}, "type": "Feature"}, {"bbox": [-92.984847446967, 42.00045066162949, -92.98084744696699, 42.00445066162949], "geometry": {"coordinates": [[[-92.98084744696699, 42.00045066162949], [-92.98084744696699, 42.00445066162949], [-92.984847446967, 42.00445066162949], [-92.984847446967, 42.00045066162949], [-92.98084744696699, 42.00045066162949]]], "type": "Polygon"}, "id": "3", "properties": {"acres": "39.85", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0003", "om_pct": 2.4, "owner": "Farmer_003", "ph_water": 6.0, "planting_date": "2023-05-15", "soil_type": "Loam", "yield_2023": "187"}, "type": "Feature"}, {"bbox": [-92.98026814672926, 42.00003900361939, -92.97626814672925, 42.00403900361939], "geometry": {"coordinates": [[[-92.97626814672925, 42.00003900361939], [-92.97626814672925, 42.00403900361939], [-92.98026814672926, 42.00403900361939], [-92.98026814672926, 42.00003900361939], [-92.97626814672925, 42.00003900361939]]], "type": "Polygon"}, "id": "4", "properties": {"acres": "38.48", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0004", "om_pct": 2.9, "owner": "Farmer_004", "ph_water": 6.2, "planting_date": "2023-05-01", "soil_type": "Silt Clay", "yield_2023": "213"}, "type": "Feature"}, {"bbox": [-92.97450811748452, 42.00037817646592, -92.97050811748451, 42.00437817646592], "geometry": {"coordinates": [[[-92.97050811748451, 42.00037817646592], [-92.97050811748451, 42.00437817646592], [-92.97450811748452, 42.00437817646592], [-92.97450811748452, 42.00037817646592], [-92.97050811748451, 42.00037817646592]]], "type": "Polygon"}, "id": "5", "properties": {"acres": "39.1", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0005", "om_pct": 3.5, "owner": "Farmer_005", "ph_water": 6.9, "planting_date": "2023-05-26", "soil_type": "Loam", "yield_2023": "187"}, "type": "Feature"}, {"bbox": [-92.97041852310707, 41.99997294326493, -92.96641852310707, 42.00397294326493], "geometry": {"coordinates": [[[-92.96641852310707, 41.99997294326493], [-92.96641852310707, 42.00397294326493], [-92.97041852310707, 42.00397294326493], [-92.97041852310707, 41.99997294326493], [-92.96641852310707, 41.99997294326493]]], "type": "Polygon"}, "id": "6", "properties": {"acres": "40.81", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0006", "om_pct": 3.0, "owner": "Farmer_006", "ph_water": 7.4, "planting_date": "2023-05-17", "soil_type": "Loam", "yield_2023": "210"}, "type": "Feature"}, {"bbox": [-92.96481975487026, 41.999611504166545, -92.96081975487026, 42.00361150416654], "geometry": {"coordinates": [[[-92.96081975487026, 41.999611504166545], [-92.96081975487026, 42.00361150416654], [-92.96481975487026, 42.00361150416654], [-92.96481975487026, 41.999611504166545], [-92.96081975487026, 41.999611504166545]]], "type": "Polygon"}, "id": "7", "properties": {"acres": "38.46", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Wheat", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0007", "om_pct": 2.4, "owner": "Farmer_007", "ph_water": 6.8, "planting_date": "2023-05-06", "soil_type": "Sandy Loam", "yield_2023": "203"}, "type": "Feature"}, {"bbox": [-92.96019717004856, 41.999848633564575, -92.95619717004855, 42.00384863356457], "geometry": {"coordinates": [[[-92.95619717004855, 41.999848633564575], [-92.95619717004855, 42.00384863356457], [-92.96019717004856, 42.00384863356457], [-92.96019717004856, 41.999848633564575], [-92.95619717004855, 41.999848633564575]]], "type": "Polygon"}, "id": "8", "properties": {"acres": "38.6", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Silt Loam", "field_id": "FLD_0008", "om_pct": 5.1, "owner": "Farmer_008", "ph_water": 6.7, "planting_date": "2023-05-12", "soil_type": "Sandy Loam", "yield_2023": "209"}, "type": "Feature"}, {"bbox": [-92.95498816928708, 41.99970275981639, -92.95098816928707, 42.003702759816385], "geometry": {"coordinates": [[[-92.95098816928707, 41.99970275981639], [-92.95098816928707, 42.003702759816385], [-92.95498816928708, 42.003702759816385], [-92.95498816928708, 41.99970275981639], [-92.95098816928707, 41.99970275981639]]], "type": "Polygon"}, "id": "9", "properties": {"acres": "41.64", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0009", "om_pct": 5.2, "owner": "Farmer_009", "ph_water": 6.7, "planting_date": "2023-05-10", "soil_type": "Silt Clay", "yield_2023": "184"}, "type": "Feature"}, {"bbox": [-92.94956843799035, 42.000306164456894, -92.94556843799035, 42.00430616445689], "geometry": {"coordinates": [[[-92.94556843799035, 42.000306164456894], [-92.94556843799035, 42.00430616445689], [-92.94956843799035, 42.00430616445689], [-92.94956843799035, 42.000306164456894], [-92.94556843799035, 42.000306164456894]]], "type": "Polygon"}, "id": "10", "properties": {"acres": "41.76", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Silt Loam", "field_id": "FLD_0010", "om_pct": 2.3, "owner": "Farmer_010", "ph_water": 7.0, "planting_date": "2023-05-26", "soil_type": "Sandy Loam", "yield_2023": "180"}, "type": "Feature"}, {"bbox": [-92.94484556577781, 42.000496317158486, -92.9408455657778, 42.004496317158484], "geometry": {"coordinates": [[[-92.9408455657778, 42.000496317158486], [-92.9408455657778, 42.004496317158484], [-92.94484556577781, 42.004496317158484], [-92.94484556577781, 42.000496317158486], [-92.9408455657778, 42.000496317158486]]], "type": "Polygon"}, "id": "11", "properties": {"acres": "40.17", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0011", "om_pct": 3.3, "owner": "Farmer_011", "ph_water": 6.8, "planting_date": "2023-05-07", "soil_type": "Sandy Loam", "yield_2023": "209"}, "type": "Feature"}, {"bbox": [-92.9401010882346, 41.99956862077964, -92.9361010882346, 42.00356862077964], "geometry": {"coordinates": [[[-92.9361010882346, 41.99956862077964], [-92.9361010882346, 42.00356862077964], [-92.9401010882346, 42.00356862077964], [-92.9401010882346, 41.99956862077964], [-92.9361010882346, 41.99956862077964]]], "type": "Polygon"}, "id": "12", "properties": {"acres": "39.17", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Sandy Loam", "field_id": "FLD_0012", "om_pct": 4.1, "owner": "Farmer_012", "ph_water": 7.5, "planting_date": "2023-05-24", "soil_type": "Silt Clay", "yield_2023": "193"}, "type": "Feature"}, {"bbox": [-92.93524432938521, 42.00008557844684, -92.93124432938521, 42.00408557844684], "geometry": {"coordinates": [[[-92.93124432938521, 42.00008557844684], [-92.93124432938521, 42.00408557844684], [-92.93524432938521, 42.00408557844684], [-92.93524432938521, 42.00008557844684], [-92.93124432938521, 42.00008557844684]]], "type": "Polygon"}, "id": "13", "properties": {"acres": "39.51", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0013", "om_pct": 2.4, "owner": "Farmer_013", "ph_water": 7.3, "planting_date": "2023-05-24", "soil_type": "Silt Clay", "yield_2023": "209"}, "type": "Feature"}, {"bbox": [-92.92994792017252, 41.99953631187346, -92.92594792017252, 42.00353631187346], "geometry": {"coordinates": [[[-92.92594792017252, 41.99953631187346], [-92.92594792017252, 42.00353631187346], [-92.92994792017252, 42.00353631187346], [-92.92994792017252, 41.99953631187346], [-92.92594792017252, 41.99953631187346]]], "type": "Polygon"}, "id": "14", "properties": {"acres": "41.64", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0014", "om_pct": 3.1, "owner": "Farmer_014", "ph_water": 6.2, "planting_date": "2023-05-22", "soil_type": "Silt Clay", "yield_2023": "190"}, "type": "Feature"}, {"bbox": [-92.92487833457479, 42.00027106167822, -92.92087833457478, 42.00427106167822], "geometry": {"coordinates": [[[-92.92087833457478, 42.00027106167822], [-92.92087833457478, 42.00427106167822], [-92.92487833457479, 42.00427106167822], [-92.92487833457479, 42.00027106167822], [-92.92087833457478, 42.00027106167822]]], "type": "Polygon"}, "id": "15", "properties": {"acres": "38.82", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Silt Loam", "field_id": "FLD_0015", "om_pct": 2.9, "owner": "Farmer_015", "ph_water": 6.6, "planting_date": "2023-05-14", "soil_type": "Loam", "yield_2023": "183"}, "type": "Feature"}, {"bbox": [-92.9199513421918, 41.99995239998917, -92.91595134219179, 42.00395239998917], "geometry": {"coordinates": [[[-92.91595134219179, 41.99995239998917], [-92.91595134219179, 42.00395239998917], [-92.9199513421918, 42.00395239998917], [-92.9199513421918, 41.99995239998917], [-92.91595134219179, 41.99995239998917]]], "type": "Polygon"}, "id": "16", "properties": {"acres": "38.96", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0016", "om_pct": 3.0, "owner": "Farmer_016", "ph_water": 6.1, "planting_date": "2023-05-20", "soil_type": "Silt Clay", "yield_2023": "163"}, "type": "Feature"}, {"bbox": [-92.91499234042861, 42.000479663391864, -92.9109923404286, 42.00447966339186], "geometry": {"coordinates": [[[-92.9109923404286, 42.000479663391864], [-92.9109923404286, 42.00447966339186], [-92.91499234042861, 42.00447966339186], [-92.91499234042861, 42.000479663391864], [-92.9109923404286, 42.000479663391864]]], "type": "Polygon"}, "id": "17", "properties": {"acres": "38.71", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0017", "om_pct": 4.2, "owner": "Farmer_017", "ph_water": 6.0, "planting_date": "2023-05-07", "soil_type": "Sandy Loam", "yield_2023": "159"}, "type": "Feature"}, {"bbox": [-92.90954417811113, 41.999552558740575, -92.90554417811113, 42.00355255874057], "geometry": {"coordinates": [[[-92.90554417811113, 41.999552558740575], [-92.90554417811113, 42.00355255874057], [-92.90954417811113, 42.00355255874057], [-92.90954417811113, 41.999552558740575], [-92.90554417811113, 41.999552558740575]]], "type": "Polygon"}, "id": "18", "properties": {"acres": "38.88", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Sandy Loam", "field_id": "FLD_0018", "om_pct": 4.8, "owner": "Farmer_018", "ph_water": 7.0, "planting_date": "2023-05-26", "soil_type": "Silt Clay", "yield_2023": "184"}, "type": "Feature"}, {"bbox": [-92.90545767026445, 42.00002773405312, -92.90145767026445, 42.00402773405312], "geometry": {"coordinates": [[[-92.90145767026445, 42.00002773405312], [-92.90145767026445, 42.00402773405312], [-92.90545767026445, 42.00402773405312], [-92.90545767026445, 42.00002773405312], [-92.90145767026445, 42.00002773405312]]], "type": "Polygon"}, "id": "19", "properties": {"acres": "39.3", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0019", "om_pct": 5.4, "owner": "Farmer_019", "ph_water": 7.1, "planting_date": "2023-05-06", "soil_type": "Silt Clay", "yield_2023": "158"}, "type": "Feature"}, {"bbox": [-93.00010948569171, 42.004623744451514, -92.9961094856917, 42.00862374445151], "geometry": {"coordinates": [[[-92.9961094856917, 42.004623744451514], [-92.9961094856917, 42.00862374445151], [-93.00010948569171, 42.00862374445151], [-93.00010948569171, 42.004623744451514], [-92.9961094856917, 42.004623744451514]]], "type": "Polygon"}, "id": "20", "properties": {"acres": "40.94", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Wheat", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0020", "om_pct": 3.1, "owner": "Farmer_020", "ph_water": 7.1, "planting_date": "2023-05-27", "soil_type": "Silt Clay", "yield_2023": "155"}, "type": "Feature"}, {"bbox": [-92.99458162660632, 42.00499914486692, -92.99058162660631, 42.00899914486692], "geometry": {"coordinates": [[[-92.99058162660631, 42.00499914486692], [-92.99058162660631, 42.00899914486692], [-92.99458162660632, 42.00899914486692], [-92.99458162660632, 42.00499914486692], [-92.99058162660631, 42.00499914486692]]], "type": "Polygon"}, "id": "21", "properties": {"acres": "41.44", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0021", "om_pct": 4.6, "owner": "Farmer_021", "ph_water": 7.0, "planting_date": "2023-05-25", "soil_type": "Loam", "yield_2023": "180"}, "type": "Feature"}, {"bbox": [-92.98960483828587, 42.00481747098164, -92.98560483828587, 42.00881747098164], "geometry": {"coordinates": [[[-92.98560483828587, 42.00481747098164], [-92.98560483828587, 42.00881747098164], [-92.98960483828587, 42.00881747098164], [-92.98960483828587, 42.00481747098164], [-92.98560483828587, 42.00481747098164]]], "type": "Polygon"}, "id": "22", "properties": {"acres": "39.06", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0022", "om_pct": 4.3, "owner": "Farmer_022", "ph_water": 6.5, "planting_date": "2023-05-08", "soil_type": "Silt Clay", "yield_2023": "187"}, "type": "Feature"}, {"bbox": [-92.98507897026869, 42.005361738493164, -92.98107897026868, 42.00936173849316], "geometry": {"coordinates": [[[-92.98107897026868, 42.005361738493164], [-92.98107897026868, 42.00936173849316], [-92.98507897026869, 42.00936173849316], [-92.98507897026869, 42.005361738493164], [-92.98107897026868, 42.005361738493164]]], "type": "Polygon"}, "id": "23", "properties": {"acres": "40.12", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Silt Loam", "field_id": "FLD_0023", "om_pct": 4.5, "owner": "Farmer_023", "ph_water": 6.3, "planting_date": "2023-05-08", "soil_type": "Silt Clay", "yield_2023": "146"}, "type": "Feature"}, {"bbox": [-92.98019701333321, 42.00523087764859, -92.9761970133332, 42.00923087764859], "geometry": {"coordinates": [[[-92.9761970133332, 42.00523087764859], [-92.9761970133332, 42.00923087764859], [-92.98019701333321, 42.00923087764859], [-92.98019701333321, 42.00523087764859], [-92.9761970133332, 42.00523087764859]]], "type": "Polygon"}, "id": "24", "properties": {"acres": "38.83", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Silt Loam", "field_id": "FLD_0024", "om_pct": 3.9, "owner": "Farmer_024", "ph_water": 6.5, "planting_date": "2023-05-08", "soil_type": "Sandy Loam", "yield_2023": "178"}, "type": "Feature"}, {"bbox": [-92.97496236066098, 42.00483828731905, -92.97096236066098, 42.00883828731905], "geometry": {"coordinates": [[[-92.97096236066098, 42.00483828731905], [-92.97096236066098, 42.00883828731905], [-92.97496236066098, 42.00883828731905], [-92.97496236066098, 42.00483828731905], [-92.97096236066098, 42.00483828731905]]], "type": "Polygon"}, "id": "25", "properties": {"acres": "39.6", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Corn", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0025", "om_pct": 2.9, "owner": "Farmer_025", "ph_water": 6.8, "planting_date": "2023-05-27", "soil_type": "Sandy Loam", "yield_2023": "175"}, "type": "Feature"}, {"bbox": [-92.96965612765473, 42.00501010589979, -92.96565612765473, 42.00901010589979], "geometry": {"coordinates": [[[-92.96565612765473, 42.00501010589979], [-92.96565612765473, 42.00901010589979], [-92.96965612765473, 42.00901010589979], [-92.96965612765473, 42.00501010589979], [-92.96565612765473, 42.00501010589979]]], "type": "Polygon"}, "id": "26", "properties": {"acres": "41.74", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0026", "om_pct": 3.9, "owner": "Farmer_026", "ph_water": 6.9, "planting_date": "2023-05-27", "soil_type": "Silt Clay", "yield_2023": "166"}, "type": "Feature"}, {"bbox": [-92.9651919456689, 42.00467901976961, -92.9611919456689, 42.00867901976961], "geometry": {"coordinates": [[[-92.9611919456689, 42.00467901976961], [-92.9611919456689, 42.00867901976961], [-92.9651919456689, 42.00867901976961], [-92.9651919456689, 42.00467901976961], [-92.9611919456689, 42.00467901976961]]], "type": "Polygon"}, "id": "27", "properties": {"acres": "41.01", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Loam", "field_id": "FLD_0027", "om_pct": 4.2, "owner": "Farmer_027", "ph_water": 6.0, "planting_date": "2023-05-28", "soil_type": "Loam", "yield_2023": "179"}, "type": "Feature"}, {"bbox": [-92.95994685556946, 42.00496681546909, -92.95594685556945, 42.00896681546909], "geometry": {"coordinates": [[[-92.95594685556945, 42.00496681546909], [-92.95594685556945, 42.00896681546909], [-92.95994685556946, 42.00896681546909], [-92.95994685556946, 42.00496681546909], [-92.95594685556945, 42.00496681546909]]], "type": "Polygon"}, "id": "28", "properties": {"acres": "39.71", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Clay Loam", "field_id": "FLD_0028", "om_pct": 3.4, "owner": "Farmer_028", "ph_water": 6.4, "planting_date": "2023-05-01", "soil_type": "Loam", "yield_2023": "190"}, "type": "Feature"}, {"bbox": [-92.95500635861481, 42.00491877340946, -92.9510063586148, 42.008918773409455], "geometry": {"coordinates": [[[-92.9510063586148, 42.00491877340946], [-92.9510063586148, 42.008918773409455], [-92.95500635861481, 42.008918773409455], [-92.95500635861481, 42.00491877340946], [-92.9510063586148, 42.00491877340946]]], "type": "Polygon"}, "id": "29", "properties": {"acres": "41.79", "crop_2020": "Corn", "crop_2021": "Corn", "crop_2022": "Corn", "crop_2023_x": "Soybeans", "crop_2023_y": "Corn", "dominant_soil": "Sandy Loam", "field_id": "FLD_0029", "om_pct": 2.5, "owner": "Farmer_029", "ph_water": 6.1, "planting_date": "2023-05-19", "soil_type": "Sandy Loam", "yield_2023": "177"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_093558b504c0597a59373562584083e4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["field_id", "crop_2023_x", "acres", "yield_2023", "owner", "planting_date", "soil_type", "crop_2020", "crop_2021", "crop_2022", "crop_2023_y", "dominant_soil", "om_pct", "ph_water"];
+    let aliases = ["Field Id:", "Crop 2023 X:", "Acres:", "Yield 2023:", "Owner:", "Planting Date:", "Soil Type:", "Crop 2020:", "Crop 2021:", "Crop 2022:", "Crop 2023 Y:", "Dominant Soil:", "Om Pct:", "Ph Water:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_093558b504c0597a59373562584083e4.addTo(feature_group_5e4877c2a8ec4c24b7fa426427042050);
+        
+    
+            feature_group_5e4877c2a8ec4c24b7fa426427042050.addTo(map_8ec98120c997210e1d606a855e5f6531);
+        
+    
+            var layer_control_78a015a97332ce7e183a090a124124bf_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_ce7accdcb4fdd2bcb1d33dccf432bb36,
+                },
+                overlays :  {
+                    "Fields" : feature_group_5e4877c2a8ec4c24b7fa426427042050,
+                },
+            };
+            let layer_control_78a015a97332ce7e183a090a124124bf = L.control.layers(
+                layer_control_78a015a97332ce7e183a090a124124bf_layers.base_layers,
+                layer_control_78a015a97332ce7e183a090a124124bf_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_8ec98120c997210e1d606a855e5f6531);
+
+        
+</script>
+</html>
